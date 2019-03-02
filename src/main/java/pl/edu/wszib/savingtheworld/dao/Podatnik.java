@@ -1,6 +1,7 @@
 package pl.edu.wszib.savingtheworld.dao;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table
@@ -13,19 +14,38 @@ public class Podatnik {
     Long pesel;
 
     @Column (nullable = false)
-    String imie;
+    public String imie;
 
     @Column (nullable = false)
-    String nazwisko;
+    public String nazwisko;
+
+    @OneToMany()
+    List<Faktura> faktury;
 
     public Podatnik () {
 
+    }
+
+    public List<Faktura> getFaktury() {
+        return faktury;
+    }
+
+    public void setFaktury(List<Faktura> faktury) {
+        this.faktury = faktury;
     }
 
     public Podatnik(String imie, String nazwisko) {
         this.imie = imie;
         this.nazwisko = nazwisko;
     }
+
+/*    public Faktura getFaktura() {
+        return faktura;
+    }
+
+    public void setFaktura(Faktura faktura) {
+        this.faktura = faktura;
+    }*/
 
     public Long getPesel() {
         return pesel;
