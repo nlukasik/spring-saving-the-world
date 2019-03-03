@@ -1,3 +1,5 @@
+/*
+
 package pl.edu.wszib.savingtheworld.dao;
 
 
@@ -22,20 +24,21 @@ public class InitComponent {
 
     @PostConstruct
     public void init() {
-        IntStream.range(0,10).forEach(i -> {
-                    Faktura faktura = new Faktura(3, "za cos");
-                    faktura = fakturaDAO.save(faktura);
-                });
 
-        List<Faktura> wszystkie = fakturaDAO.findAll();
-
-        IntStream.range(0, 50).forEach(i -> {
+            IntStream.range(0, 10).forEach(i -> {
             Podatnik podatnik = new Podatnik("adam" + i , "adam" + i);
-            podatnik.setFaktury(Arrays.asList(wszystkie.get(i % 10), wszystkie.get((i + 5)%10)));
-            podatnik = podatnikDao.save(podatnik);
-            podatnik.getImie();
+            Podatnik podatnikSaved = podatnikDao.save(podatnik);
+
+
+
+            IntStream.range(0,1).forEach(j -> {
+                Faktura faktura = new Faktura(3, "za cos" + j);
+                faktura.setPodatnik(podatnikSaved);
+                faktura = fakturaDAO.save(faktura);
+            });
+
         });
-        System.out.println("");
+        System.out.println();
     }
 
     @PreDestroy
@@ -43,3 +46,5 @@ public class InitComponent {
 
     }
 }
+
+*/

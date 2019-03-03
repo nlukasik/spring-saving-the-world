@@ -1,3 +1,4 @@
+/*
 package pl.edu.wszib.savingtheworld.dao;
 
 import javax.persistence.*;
@@ -19,7 +20,7 @@ public class Podatnik {
     @Column (nullable = false)
     public String nazwisko;
 
-    @OneToMany()
+    @OneToMany(mappedBy = "podatnik")
     List<Faktura> faktury;
 
     public Podatnik () {
@@ -39,13 +40,15 @@ public class Podatnik {
         this.nazwisko = nazwisko;
     }
 
+*/
 /*    public Faktura getFaktura() {
         return faktura;
     }
 
     public void setFaktura(Faktura faktura) {
         this.faktura = faktura;
-    }*/
+    }*//*
+
 
     public Long getPesel() {
         return pesel;
@@ -71,3 +74,4 @@ public class Podatnik {
         this.nazwisko = nazwisko;
     }
 }
+*/
