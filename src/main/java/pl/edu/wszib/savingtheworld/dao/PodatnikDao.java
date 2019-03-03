@@ -1,4 +1,4 @@
-/*
+
 package pl.edu.wszib.savingtheworld.dao;
 
 
@@ -16,7 +16,7 @@ public interface PodatnikDao extends CrudRepository <Podatnik, Long> {
     List<Podatnik> findAllByNazwiskoIgnoreCaseOrderByImieDesc(String nazwisko);
 
 
-    List<Podatnik> findByFaktura_Tytul(String tytul);
+    List<Podatnik> findByFaktury_Tytul(String tytul);
     List<Podatnik> findAll();
 }
-*/
+

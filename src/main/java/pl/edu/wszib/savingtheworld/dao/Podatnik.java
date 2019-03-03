@@ -1,4 +1,4 @@
-/*
+
 package pl.edu.wszib.savingtheworld.dao;
 
 import javax.persistence.*;
@@ -40,14 +40,14 @@ public class Podatnik {
         this.nazwisko = nazwisko;
     }
 
-*/
-/*    public Faktura getFaktura() {
+
+   /*public Faktura getFaktura() {
         return faktura;
     }
 
     public void setFaktura(Faktura faktura) {
         this.faktura = faktura;
-    }*//*
+    }*/
 
 
     public Long getPesel() {
@@ -74,4 +74,4 @@ public class Podatnik {
         this.nazwisko = nazwisko;
     }
 }
-*/
+

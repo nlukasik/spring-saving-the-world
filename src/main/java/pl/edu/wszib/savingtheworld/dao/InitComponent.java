@@ -1,4 +1,4 @@
-/*
+
 
 package pl.edu.wszib.savingtheworld.dao;
 
@@ -47,4 +47,4 @@ public class InitComponent {
     }
 }
 
-*/
+

@@ -1,4 +1,4 @@
-/*
+
 package pl.edu.wszib.savingtheworld.dao;
 
 
@@ -14,4 +14,4 @@ public interface FakturaDAO extends CrudRepository <Faktura, Long> {
 
     List<Faktura> findAllByPodatnik(Podatnik podatnik);
 }
-*/
+
