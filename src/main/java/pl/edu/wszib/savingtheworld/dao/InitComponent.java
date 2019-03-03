@@ -31,7 +31,7 @@ public class InitComponent {
 
 
 
-            IntStream.range(0,1).forEach(j -> {
+            IntStream.range(0,10000).forEach(j -> {
                 Faktura faktura = new Faktura(3, "za cos" + j);
                 faktura.setPodatnik(podatnikSaved);
                 faktura = fakturaDAO.save(faktura);

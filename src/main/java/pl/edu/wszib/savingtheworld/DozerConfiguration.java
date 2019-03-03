@@ -1,9 +1,8 @@
-/*
 package pl.edu.wszib.savingtheworld;
 
 
-import org.apache.catalina.mapper.Mapper;
 import org.dozer.DozerBeanMapper;
+import org.dozer.Mapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -17,4 +16,4 @@ public class DozerConfiguration {
     }
 
 }
-*/
+
